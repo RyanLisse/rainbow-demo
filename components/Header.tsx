@@ -5,7 +5,7 @@ function Header() {
     return (
         <Container>
             <HeaderContainer>
-                <ConnectButton />
+
             </HeaderContainer>
 
 
