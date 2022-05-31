@@ -2,20 +2,33 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Main from '../components/Main';
+import tw from "tailwind-styled-components";
 const Home: NextPage = () => {
   return (
-    <div className="flex ">
+    <Container>
       <Head>
         <title>Create Rainbowkit App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col justify-end p-4">
-        <Header />
 
-      </div>
+
+      <Header />
+
+
       <Main />
-    </div>
+
+
+    </Container >
   );
 };
+
+const Container = tw.div`
+h-screen
+
+justify-center
+items-center
+bg-slate-50
+text-black
+ `;
 
 export default Home;
